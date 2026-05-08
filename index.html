@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XI Matchbook — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --card: #ffffff;
+      --text: #1c1917;
+      --mute: #78716c;
+      --soft: #a8a29e;
+      --border: #e7e5e4;
+      --teal: #1e6b5c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 28px 80px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin: 0 0 4px;
+    }
+    .updated {
+      color: var(--mute);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      margin: 32px 0 8px;
+    }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 4px; padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--teal); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .summary {
+      background: #ecfdf5;
+      border-color: #d8f3eb;
+    }
+    .summary strong { color: var(--teal); }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--soft);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>XI Matchbook · Privacy Policy</h1>
+    <p class="updated">Last updated: May 7, 2026</p>
+
+    <div class="card summary">
+      <p><strong>The short version:</strong> XI Matchbook is a private match-tracking app for closed friend groups. We collect the bare minimum needed to sign you in and let you log matches: your name, email, and the matches/scores you yourself enter. We do not sell your data, do not run ads, do not include any analytics or tracking SDKs, and do not share your data with anyone outside the people in your group.</p>
+    </div>
+
+    <h2>Who runs this app</h2>
+    <p>XI Matchbook is operated by Jesus Robles ("we," "us"), a single individual developer based in the United States. This is a personal project, not a company. The app is distributed via Apple's App Store and TestFlight.</p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Identity</strong>: your name and email address. Email comes either from Apple Sign-In (which may be a relay address Apple generates on your behalf) or from the email you type when using the email-code sign-in option.</li>
+      <li><strong>Profile</strong>: the display name, initials, and color you choose when joining a group.</li>
+      <li><strong>App content you enter</strong>: matches you log (game, format, players, scores), leagues and tournaments you create, group names, and any notes attached to a match.</li>
+      <li><strong>Authentication metadata</strong>: an Apple ID identifier or email-based session token managed by our authentication provider (Supabase) so we can keep you signed in across launches.</li>
+    </ul>
+    <p>We do <em>not</em> collect: your location, your contacts, your photos, your browsing history, advertising identifiers, health data, financial information, or any device sensors.</p>
+
+    <h2>How your data is used</h2>
+    <ul>
+      <li>To sign you into the app and keep your session active.</li>
+      <li>To show you your matches, ratings, and standings, and to share those with the other members of your group.</li>
+      <li>To compute things like Elo-style ratings, championship belts, and storylines from the data you've entered.</li>
+    </ul>
+    <p>We do not use your data for advertising, marketing, model training, or any third-party purpose. We do not sell your data. We do not share your data with any third party except the infrastructure providers listed below who store it on our behalf.</p>
+
+    <h2>Where your data is stored</h2>
+    <p>All app data is stored in a database hosted by <a href="https://supabase.com/privacy">Supabase</a>, our backend provider, in their US region. Your data is gated by row-level security so only members of your group can read your group's matches, ratings, etc.</p>
+
+    <h2>Third parties we rely on</h2>
+    <ul>
+      <li><strong>Apple</strong> — for Sign in with Apple and TestFlight distribution. <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+      <li><strong>Supabase</strong> — for authentication, database, and backend storage. <a href="https://supabase.com/privacy">Supabase's privacy policy</a>.</li>
+      <li><strong>Expo</strong> — for over-the-air updates of the app's JavaScript code. Expo does not receive any of your personal data; it only delivers app updates. <a href="https://expo.dev/privacy">Expo's privacy policy</a>.</li>
+    </ul>
+    <p>We have no other third parties: no analytics, no crash reporting (yet), no advertising, no trackers.</p>
+
+    <h2>Children</h2>
+    <p>XI Matchbook is intended for ages 13 and up. We do not knowingly collect data from children under 13. If you believe we have, please contact us and we will delete the account.</p>
+
+    <h2>Your rights</h2>
+    <ul>
+      <li><strong>See what we have on you</strong>: email us and we'll send you everything.</li>
+      <li><strong>Correct or delete</strong>: you can change your name, initials, and color from Settings inside the app. To fully delete your account and all associated data, email us and we'll process the deletion within 7 days.</li>
+      <li><strong>Stop using the app</strong>: uninstall it. To also remove your stored data after uninstalling, email us.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Data is transmitted over HTTPS/TLS and authentication tokens are stored in your device's secure storage. Database access is gated by Supabase row-level security. We do not store passwords ourselves — sign-in is handled by Apple Sign-In or one-time email codes.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy in a way that materially affects what we collect or how we use it, we'll update the "Last updated" date at the top and, if you're already an active user, surface a notice in the app on your next launch. Continued use of the app after a change means you accept the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jrobles0302@gmail.com">jrobles0302@gmail.com</a></p>
+    <p>This is a personal project so it's just one inbox; we'll respond within a reasonable time, usually a few days.</p>
+
+    <footer>
+      XI Matchbook · A record of every game · Made for friend groups.
+    </footer>
+  </main>
+</body>
+</html>
